@@ -10,7 +10,8 @@ export const CatImage = () => {
 
   const fetchingCat = async () => {
     const response = await axios.get(
-      "https://api.thecatapi.com/v1/images/search?limit=1");
+      "https://api.thecatapi.com/v1/images/search?limit=1"
+    );
     const imageUrl = response.data[0].url;
     setImageUrl(imageUrl);
     console.log(response.data[0]);
@@ -22,12 +23,14 @@ export const CatImage = () => {
 
   return (
     <div className="cat-image__box">
-      {!buttonClicked ? (
-        <button className="button-show__cat" onClick={() => setButtonClicked(true)}>Show the cat =)</button>
-      ) : isLoaded ? (
-        <img className="cat__image" src={imageUrl} alt="cat" />
+      {buttonClicked ? (
+        isLoaded ? (
+          <img className="cat__image" src={imageUrl} alt="cat" />
+        ) : (
+          <p>Loading...</p>
+        )
       ) : (
-        <p>Loading...</p>
+        <button className="button-show__cat" onClick={() => setButtonClicked(true)}>Load Cat Image</button>
       )}
     </div>
   );
