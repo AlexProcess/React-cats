@@ -1,13 +1,13 @@
 import React from 'react'
-import './catsApp.css'
+import './CatsApp.css'
 import { CatImage } from './Components/CatImage'
 
 function CatsApp() {
 
   return (
-   <>
+   <section className='container__app'>
     <CatImage/>
-   </> 
+   </section> 
   )
 }
 
