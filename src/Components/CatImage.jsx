@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 export const CatImage = () => { 
     const [imageUrl, setImageUrl] = useState(['']); 
-    const [isLoaded, setIsLoaded] = useState(false); 
+    const [isLoaded, setIsLoaded] = useState(true); 
     
     const fetchingCat = async () => {
       const response = await axios.get('https://api.thecatapi.com/v1/images/search');
