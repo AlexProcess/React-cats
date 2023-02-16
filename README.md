@@ -1,5 +1,5 @@
 # React-cats
 # NPM RUN DEV para inicializar el proyecto
 `npm run dev`
-![image](https://user-images.githubusercontent.com/104278094/219235016-8a362c54-1e3b-4cdf-9b3f-084a8a700145.png)
+![image](https://user-images.githubusercontent.com/104278094/219235505-fde16e83-b6e5-4e90-84a7-a70aed0050f1.png)
 
