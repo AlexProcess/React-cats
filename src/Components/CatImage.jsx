@@ -14,7 +14,6 @@ export const CatImage = () => {
     );
     const imageUrl = response.data[0].url;
     setImageUrl(imageUrl);
-    console.log(response.data[0]);
   };
 
   useEffect(() => {
